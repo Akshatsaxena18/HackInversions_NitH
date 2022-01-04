@@ -163,8 +163,7 @@ function zoomMap() {
                     radius: 20000,
                 },
             ];
-            // 0.7 chance it will say no
-            // Connect this to the actual model in the future
+
             const good = Math.random() > 0.7;
             L.circle(L.latLng(lat, long),
                 markerOptions[good ? 1 : 0],
